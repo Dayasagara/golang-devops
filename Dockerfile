@@ -2,7 +2,7 @@ FROM golang:1.11
 
 # Add Maintainer Info
 # Set the Current Working Directory inside the container
-WORKDIR $GOPATH/src/golang-devops
+WORKDIR $GOPATH/src/first-devops
 
 # Copy everything from the current directory to the PWD(Present Working Directory) inside the container
 COPY . .
@@ -18,4 +18,4 @@ RUN go install -v ./...
 EXPOSE 8000
 
 # Run the executable
-CMD ["golang-devops"]
+CMD ["first-devops"]
